@@ -32,17 +32,6 @@ export function SocialLogins() {
           <Chrome className="mr-2 h-4 w-4" />
           Google
         </Button>
-        {/* 
-          NOTA: Para habilitar Facebook, se necesita:
-          1. Configurar el proveedor en la consola de Firebase.
-          2. Crear una App en Facebook for Developers para obtener App ID y App Secret.
-          3. Añadir la lógica correspondiente en `use-auth` y `firebase/auth`.
-        */}
-        <Button variant="outline" type="button" disabled>
-          {/* <Facebook className="mr-2 h-4 w-4" /> */}
-          <span className="mr-2 h-4 w-4">📘</span>
-          Facebook (próximamente)
-        </Button>
       </div>
     </>
   );
