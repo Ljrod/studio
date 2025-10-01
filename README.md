@@ -1,6 +1,6 @@
-# Laibell: Marketing y Sitios Web
+# Liabell: Marketing y Sitios Web
 
-Este es un proyecto Next.js para la landing page de "Laibell", una agencia de marketing digital. El proyecto está construido con Next.js 14 (App Router), TypeScript, Tailwind CSS, Shadcn/UI y Firebase.
+Este es un proyecto Next.js para la landing page de "Liabell", una agencia de marketing digital. El proyecto está construido con Next.js 14 (App Router), TypeScript, Tailwind CSS, Shadcn/UI y Firebase.
 
 ## Características
 
@@ -39,7 +39,7 @@ pnpm install
 2.  **Crear una Aplicación Web**:
     - Dentro de tu proyecto, ve a "Project Settings" (Configuración del proyecto).
     - En la sección "Your apps" (Tus apps), haz clic en el icono web (`</>`) para crear una nueva aplicación web.
-    - Dale un nombre (ej. "Laibell Web") y registra la app. NO actives Firebase Hosting en este paso.
+    - Dale un nombre (ej. "Liabell Web") y registra la app. NO actives Firebase Hosting en este paso.
     - Firebase te proporcionará un objeto de configuración (`firebaseConfig`). Copia estos valores.
 
 3.  **Configurar Variables de Entorno**:

@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-4">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
             <Logo className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold font-headline">Laibell</span>
+            <span className="text-xl font-bold font-headline">Liabell</span>
           </Link>
           <p className="text-muted-foreground">
             Estrategia, diseño y performance para crecer en digital.
@@ -61,8 +61,8 @@ export default function Footer() {
           </div>
           <div className="grid gap-2">
             <h4 className="font-semibold font-headline">Contacto</h4>
-            <a href="mailto:info@laibell.com" className="text-muted-foreground hover:text-foreground">
-              info@laibell.com
+            <a href="mailto:info@liabell.com" className="text-muted-foreground hover:text-foreground">
+              info@liabell.com
             </a>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function Footer() {
 
       {/* Barra inferior con copyright y redes sociales */}
       <div className="container flex flex-col items-center justify-between gap-4 border-t border-border/40 py-6 sm:flex-row">
-        <p className="text-xs text-muted-foreground">&copy; {new Date().getFullYear()} Laibell. Todos los derechos reservados.</p>
+        <p className="text-xs text-muted-foreground">&copy; {new Date().getFullYear()} Liabell. Todos los derechos reservados.</p>
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="icon" asChild>
             <Link href="#" aria-label="Twitter">
@@ -88,7 +88,7 @@ export default function Footer() {
             </Link>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <Link href="mailto:info@laibell.com" aria-label="Email">
+            <Link href="mailto:info@liabell.com" aria-label="Email">
               <Mail className="h-5 w-5" />
             </Link>
           </Button>

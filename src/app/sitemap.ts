@@ -4,7 +4,7 @@ import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
   // TODO: Reemplazar con la URL de producción final.
-  const baseUrl = 'https://laibell.com'
+  const baseUrl = 'https://liabell.com'
 
   // Aquí se podrían añadir rutas dinámicas, por ejemplo, desde un blog.
   // const blogPosts = await fetch(...).then(res => res.json());

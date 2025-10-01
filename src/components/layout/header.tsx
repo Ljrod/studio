@@ -77,7 +77,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Logo className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block font-headline">
-              Laibell
+              Liabell
             </span>
           </Link>
           {/* Navegación de escritorio */}
@@ -253,7 +253,7 @@ function MobileNav() {
           onClick={() => setOpen(false)}
         >
           <Logo className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline">Laibell</span>
+          <span className="font-bold font-headline">Liabell</span>
         </Link>
         <div className="flex flex-col space-y-3">
           <h4 className="font-medium px-4">Navegación</h4>

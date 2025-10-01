@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Iniciar Sesión",
-  description: "Ingresa a tu cuenta de Laibell para gestionar tus proyectos.",
+  description: "Ingresa a tu cuenta de Liabell para gestionar tus proyectos.",
 };
 
 /**

@@ -4,7 +4,7 @@ import { MetadataRoute } from 'next'
  
 export default function robots(): MetadataRoute.Robots {
   // TODO: Reemplazar con la URL de producción final.
-  const sitemapUrl = 'https://laibell.com/sitemap.xml';
+  const sitemapUrl = 'https://liabell.com/sitemap.xml';
 
   return {
     rules: {

@@ -32,8 +32,8 @@ export default function ContactSection() {
                 <Mail className="h-6 w-6 text-primary mt-1" />
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <a href="mailto:info@laibell.com" className="hover:text-primary">
-                    info@laibell.com
+                  <a href="mailto:info@liabell.com" className="hover:text-primary">
+                    info@liabell.com
                   </a>
                   <p className="text-sm">Para consultas generales y propuestas.</p>
                 </div>

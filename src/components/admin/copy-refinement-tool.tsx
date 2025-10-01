@@ -57,7 +57,7 @@ export function CopyRefinementTool() {
     try {
       const aiResult = await refineCopy({
         ...data,
-        brandName: "Laibell",
+        brandName: "Liabell",
       });
       setResult(aiResult);
     } catch (error) {

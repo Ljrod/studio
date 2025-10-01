@@ -7,11 +7,11 @@ import "./globals.css";
 // Metadatos base para SEO. Se pueden sobreescribir en páginas específicas.
 export const metadata: Metadata = {
   title: {
-    default: "Laibell: Marketing y Sitios Web para hacer crecer tu empresa",
-    template: "%s | Laibell",
+    default: "Liabell: Marketing y Sitios Web para hacer crecer tu empresa",
+    template: "%s | Liabell",
   },
   description:
-    "Transformamos tu negocio con estrategias de marketing digital, diseño web de alto impacto y performance. Aumenta tus ventas y consolida tu marca con Laibell.",
+    "Transformamos tu negocio con estrategias de marketing digital, diseño web de alto impacto y performance. Aumenta tus ventas y consolida tu marca con Liabell.",
   keywords: [
     "marketing digital",
     "diseño web",
@@ -25,32 +25,32 @@ export const metadata: Metadata = {
     "Santiago",
     "Chile",
   ],
-  authors: [{ name: "Laibell" }],
-  creator: "Laibell",
+  authors: [{ name: "Liabell" }],
+  creator: "Liabell",
   openGraph: {
     type: "website",
     locale: "es_CL",
-    url: "https://laibell.com", // Reemplazar con el dominio final
-    title: "Laibell: Marketing y Sitios Web para hacer crecer tu empresa",
+    url: "https://liabell.com", // Reemplazar con el dominio final
+    title: "Liabell: Marketing y Sitios Web para hacer crecer tu empresa",
     description:
       "Estrategias de marketing digital y diseño web de alto impacto para impulsar el crecimiento de tu negocio.",
-    siteName: "Laibell",
+    siteName: "Liabell",
     images: [
       {
         url: "/og-image.png", // Asegúrate de tener este archivo en /public
         width: 1200,
         height: 630,
-        alt: "Laibell Digital Growth",
+        alt: "Liabell Digital Growth",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Laibell: Marketing y Sitios Web para hacer crecer tu empresa",
+    title: "Liabell: Marketing y Sitios Web para hacer crecer tu empresa",
     description:
-      "Estrategia, diseño y performance para crecer en digital. Impulsa tu negocio con Laibell.",
+      "Estrategia, diseño y performance para crecer en digital. Impulsa tu negocio con Liabell.",
     images: ["/og-image.png"], // Asegúrate de tener este archivo en /public
-    creator: "@laibell", // Reemplazar con el usuario de Twitter si existe
+    creator: "@liabell", // Reemplazar con el usuario de Twitter si existe
   },
   robots: {
     index: true,

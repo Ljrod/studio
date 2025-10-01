@@ -26,7 +26,7 @@ const processSteps = [
 ];
 
 /**
- * Componente que describe el proceso de trabajo de Laibell.
+ * Componente que describe el proceso de trabajo de Liabell.
  * Muestra los 4 pasos clave de su metodología.
  */
 export default function Process() {

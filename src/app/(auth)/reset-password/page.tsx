@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Restablecer Contraseña",
-  description: "Recupera el acceso a tu cuenta de Laibell.",
+  description: "Recupera el acceso a tu cuenta de Liabell.",
 };
 
 /**

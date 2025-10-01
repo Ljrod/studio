@@ -1,6 +1,6 @@
 // /src/lib/types.ts
 
-// Define el tipo para un solo servicio ofrecido por Laibell.
+// Define el tipo para un solo servicio ofrecido por Liabell.
 export interface Service {
   id: string; // Identificador único para el servicio.
   title: string; // Título del servicio (ej. "Diseño Web").

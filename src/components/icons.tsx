@@ -3,7 +3,7 @@
 import type { SVGProps } from "react";
 
 /**
- * Componente para el logo de Laibell.
+ * Componente para el logo de Liabell.
  * Es un SVG en línea para un rendimiento óptimo y capacidad de estilización.
  * @param props Propiedades estándar de SVG.
  */

@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AI Copy Refinement Tool",
-  description: "Utiliza la IA para mejorar los textos de marketing de Laibell.",
+  description: "Utiliza la IA para mejorar los textos de marketing de Liabell.",
 };
 
 /**

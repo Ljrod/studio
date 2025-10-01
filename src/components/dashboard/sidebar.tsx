@@ -28,7 +28,7 @@ export default function DashboardSidebar() {
       {/* Logo y nombre */}
       <div className="flex items-center gap-2">
         <Logo className="h-8 w-8 text-primary" />
-        <span className="text-xl font-bold font-headline">Laibell</span>
+        <span className="text-xl font-bold font-headline">Liabell</span>
       </div>
 
       {/* Navegación principal del dashboard */}
