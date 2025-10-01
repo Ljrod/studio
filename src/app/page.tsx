@@ -16,7 +16,7 @@ import CtaSection from "@/components/landing/cta-section";
  */
 export default function MarketingPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col items-center">
       {/* Header: Contiene la navegación principal y el logo */}
       <Header />
 
