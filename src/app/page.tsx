@@ -21,7 +21,7 @@ export default function MarketingPage() {
       <Header />
 
       {/* Main: Contenedor principal para el contenido de la página */}
-      <main className="flex-1">
+      <main className="flex-1 w-full container">
         {/* Cada sección es un componente autocontenido */}
         <Hero />
         <Services />

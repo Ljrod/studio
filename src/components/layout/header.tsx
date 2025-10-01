@@ -80,7 +80,6 @@ export default function Header() {
               Laibell
             </span>
           </Link>
-
           {/* Navegación de escritorio */}
           <div className="hidden md:flex">
             <NavigationMenu>
@@ -122,11 +121,11 @@ export default function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                    <Link href="/#faq">
+                  <Link href="/#faq" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       FAQ
-                    </Link>
-                  </NavigationMenuLink>
+                    </NavigationMenuLink>
+                  </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
