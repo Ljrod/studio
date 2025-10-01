@@ -1,0 +1,45 @@
+
+[
+  {
+    "id": "emprendedores",
+    "title": "Plan Emprendedor",
+    "audience": "Ideal para startups y freelancers",
+    "price": "Desde $499.990 CLP",
+    "features": [
+      "Sitio Web Landing Page",
+      "Setup inicial de Redes Sociales",
+      "Estrategia de lanzamiento",
+      "1 sesión de mentoría"
+    ],
+    "isRecommended": false,
+    "cta": "Comenzar Ahora"
+  },
+  {
+    "id": "pymes",
+    "title": "Plan PYME",
+    "audience": "Para negocios en crecimiento",
+    "price": "Desde $899.990 CLP",
+    "features": [
+      "Sitio Web Corporativo (hasta 5 págs.)",
+      "Gestión mensual de 2 Redes Sociales",
+      "Informe mensual de rendimiento",
+      "Soporte prioritario por email"
+    ],
+    "isRecommended": true,
+    "cta": "Elegir Plan PYME"
+  },
+{
+    "id": "empresa",
+    "title": "Plan Empresa",
+    "audience": "Soluciones a medida para marcas consolidadas",
+    "price": "Personalizado",
+    "features": [
+      "E-commerce o Plataforma Web a medida",
+      "Estrategia digital 360° completa",
+      "Gestión de campañas de pago",
+      "Ejecutivo de cuenta dedicado"
+    ],
+    "isRecommended": false,
+    "cta": "Solicitar Cotización"
+  }
+]

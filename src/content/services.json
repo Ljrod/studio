@@ -1,0 +1,76 @@
+
+[
+  {
+    "id": "estrategia-digital",
+    "title": "Estrategia Digital",
+    "description": "Creamos el mapa de ruta para que tu negocio conquiste el mundo digital.",
+    "icon": "Compass",
+    "details": [
+      "Análisis de mercado y competencia",
+      "Definición de buyer persona",
+      "Plan de marketing multicanal",
+      "Optimización de embudos de conversión"
+    ]
+  },
+  {
+    "id": "gestion-rrss",
+    "title": "Gestión de Redes Sociales",
+    "description": "Conectamos con tu audiencia y construimos una comunidad leal alrededor de tu marca.",
+    "icon": "Users",
+    "details": [
+      "Creación de calendarios de contenido",
+      "Diseño gráfico y copywriting",
+      "Community management",
+      "Reportes de rendimiento mensual"
+    ]
+  },
+  {
+    "id": "diseno-web",
+    "title": "Diseño Web",
+    "description": "Desarrollamos sitios web rápidos, atractivos y optimizados para la conversión.",
+    "icon": "Rocket",
+    "details": [
+      "Diseño UI/UX centrado en el usuario",
+      "Desarrollo con Next.js y WordPress",
+      "Optimización SEO on-page",
+      "Integración con pasarelas de pago"
+    ]
+  },
+  {
+    "id": "campanas-ads",
+    "title": "Campañas de Publicidad",
+    "description": "Llegamos a tus clientes potenciales con anuncios que generan resultados medibles.",
+    "icon": "Target",
+    "details": [
+      "Google Ads (Search, Display, YouTube)",
+      "Meta Ads (Facebook, Instagram)",
+      "Optimización de CPC y ROAS",
+      "Retargeting y audiencias personalizadas"
+    ]
+tj
+  },
+  {
+    "id": "produccion-audiovisual",
+    "title": "Producción Audiovisual",
+    "description": "Contamos tu historia con videos y fotografías de alta calidad que capturan la atención.",
+    "icon": "Clapperboard",
+    "details": [
+      "Videos corporativos y de producto",
+      "Fotografía profesional",
+      "Contenido para redes sociales",
+      "Edición y postproducción"
+    ]
+  },
+  {
+    "id": "seo",
+    "title": "Posicionamiento SEO",
+    "description": "Hacemos que tus clientes te encuentren primero en Google de forma orgánica.",
+    "icon": "TrendingUp",
+    "details": [
+      "Auditoría SEO completa",
+      "Estrategia de palabras clave",
+      "Link building de calidad",
+      "SEO técnico y local"
+    ]
+  }
+]
