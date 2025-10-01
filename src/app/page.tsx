@@ -20,10 +20,12 @@ export default function MarketingPage() {
       {/* Header: Contiene la navegación principal y el logo */}
       <Header />
 
-      {/* Main: Contenedor principal para el contenido de la página */}
+      {/* La sección Hero se coloca fuera del main para que ocupe el ancho completo */}
+      <Hero />
+
+      {/* Main: Contenedor principal para el resto del contenido de la página */}
       <main className="flex-1 w-full container">
         {/* Cada sección es un componente autocontenido */}
-        <Hero />
         <Services />
         <Plans />
         <Process />
