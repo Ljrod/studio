@@ -12,7 +12,6 @@ import {
   Target,
   Clapperboard,
   TrendingUp,
-  ChevronRight,
   LogOut,
   LayoutDashboard,
   Settings,
@@ -68,69 +67,73 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        {/* --- LADO IZQUIERDO --- */}
-        <div className="flex items-center gap-4">
-          <MobileNav />
+        {/* --- LADO IZQUIERDO: Logo, Nombre y Navegación --- */}
+        <div className="flex items-center gap-6">
+          {/* Menú móvil */}
+          <div className="md:hidden">
+            <MobileNav />
+          </div>
+          {/* Logo y nombre */}
           <Link href="/" className="flex items-center space-x-2">
             <Logo className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block font-headline">
               Laibell
             </span>
           </Link>
-        </div>
 
-        {/* --- CENTRO (Solo en Escritorio) --- */}
-        <div className="hidden md:flex">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Servicios</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                    {services.map((service) => {
-                      const IconComponent = iconMap[service.icon];
-                      return (
+          {/* Navegación de escritorio */}
+          <div className="hidden md:flex">
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Servicios</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                      {services.map((service) => {
+                        const IconComponent = iconMap[service.icon];
+                        return (
+                          <ListItem
+                            key={service.title}
+                            title={service.title}
+                            href={`/#services`}
+                          >
+                            {IconComponent && <IconComponent className="h-4 w-4 mr-2 text-primary" />}
+                            {service.description}
+                          </ListItem>
+                        );
+                      })}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Planes</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[300px] gap-3 p-4">
+                      {plans.map((plan) => (
                         <ListItem
-                          key={service.title}
-                          title={service.title}
-                          href={`/#services`}
+                          key={plan.title}
+                          title={plan.title}
+                          href="/#plans"
                         >
-                          {IconComponent && <IconComponent className="h-4 w-4 mr-2 text-primary" />}
-                          {service.description}
+                          {plan.audience}
                         </ListItem>
-                      );
-                    })}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Planes</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[300px] gap-3 p-4">
-                    {plans.map((plan) => (
-                      <ListItem
-                        key={plan.title}
-                        title={plan.title}
-                        href="/#plans"
-                      >
-                        {plan.audience}
-                      </ListItem>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                  <Link href="/#faq">
-                    FAQ
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                    <Link href="/#faq">
+                      FAQ
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
         </div>
         
-        {/* --- LADO DERECHO --- */}
+        {/* --- LADO DERECHO: Botones de Autenticación/Menú de Usuario --- */}
         <div className="flex items-center space-x-2">
           <UserAuth />
         </div>
