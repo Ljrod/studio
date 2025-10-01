@@ -55,7 +55,7 @@ const iconMap: { [key: string]: React.ElementType } = {
   Users,
   Rocket,
   Target,
-Clapperboard,
+  Clapperboard,
   TrendingUp,
 };
 
@@ -65,19 +65,22 @@ Clapperboard,
  * Muestra dinámicamente el estado de autenticación del usuario.
  */
 export default function Header() {
-  const { user, signOut } = useAuth();
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
-        <div className="mr-4 hidden md:flex">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+      <div className="container flex h-16 items-center justify-between">
+        {/* --- LADO IZQUIERDO --- */}
+        <div className="flex items-center gap-4">
+          <MobileNav />
+          <Link href="/" className="flex items-center space-x-2">
             <Logo className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block font-headline">
               Laibell
             </span>
           </Link>
-          {/* Menú de navegación para escritorio */}
+        </div>
+
+        {/* --- CENTRO (Solo en Escritorio) --- */}
+        <div className="hidden md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -127,35 +130,35 @@ export default function Header() {
           </NavigationMenu>
         </div>
         
-        {/* Menú de navegación para móvil */}
-        <div className="flex flex-1 items-center justify-between space-x-2 md:hidden">
-            <MobileNav />
-            <Link href="/" className="flex items-center space-x-2">
-              <Logo className="h-6 w-6 text-primary" />
-              <span className="font-bold font-headline">Laibell</span>
-            </Link>
-        </div>
-
-        {/* Botones de acción y menú de usuario */}
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <nav className="flex items-center space-x-2">
-            {user ? (
-              <UserMenu />
-            ) : (
-              <>
-                <Button variant="ghost" asChild>
-                  <Link href="/login">Ingresar</Link>
-                </Button>
-                <Button asChild>
-                  <Link href="/register">Cotizar Ahora</Link>
-                </Button>
-              </>
-            )}
-          </nav>
+        {/* --- LADO DERECHO --- */}
+        <div className="flex items-center space-x-2">
+          <UserAuth />
         </div>
       </div>
     </header>
   );
+}
+
+/**
+ * Componente que renderiza los botones de autenticación o el menú de usuario.
+ */
+function UserAuth() {
+  const { user } = useAuth();
+  
+  if (user) {
+    return <UserMenu />;
+  }
+
+  return (
+    <div className="hidden md:flex items-center space-x-2">
+      <Button variant="ghost" asChild>
+        <Link href="/login">Ingresar</Link>
+      </Button>
+      <Button asChild>
+        <Link href="/register">Cotizar Ahora</Link>
+      </Button>
+    </div>
+  )
 }
 
 /**
@@ -228,6 +231,7 @@ function UserMenu() {
  */
 function MobileNav() {
   const [open, setOpen] = React.useState(false);
+  const { user } = useAuth();
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -250,19 +254,18 @@ function MobileNav() {
           <span className="font-bold font-headline">Laibell</span>
         </Link>
         <div className="flex flex-col space-y-3">
-          <h4 className="font-medium px-4">Servicios</h4>
-          {services.map((service) => (
-            <MobileLink key={service.id} href="/#services" onOpenChange={setOpen}>
-              {service.title}
-            </MobileLink>
-          ))}
-          <h4 className="font-medium px-4 pt-4">Planes</h4>
-          {plans.map((plan) => (
-            <MobileLink key={plan.id} href="/#plans" onOpenChange={setOpen}>
-              {plan.title}
-            </MobileLink>
-          ))}
+          <h4 className="font-medium px-4">Navegación</h4>
+          <MobileLink href="/#services" onOpenChange={setOpen}>Servicios</MobileLink>
+          <MobileLink href="/#plans" onOpenChange={setOpen}>Planes</MobileLink>
           <MobileLink href="/#faq" onOpenChange={setOpen}>FAQ</MobileLink>
+
+          {!user && (
+            <>
+              <h4 className="font-medium px-4 pt-4">Acceso</h4>
+              <MobileLink href="/login" onOpenChange={setOpen}>Ingresar</MobileLink>
+              <MobileLink href="/register" onOpenChange={setOpen}>Cotizar Ahora</MobileLink>
+            </>
+          )}
         </div>
       </SheetContent>
     </Sheet>
