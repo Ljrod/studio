@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="flex flex-col items-center space-y-6">
           {/* Título principal H1 */}
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground">
-            Laibell: Marketing y Sitios Web que <span className="text-primary">hacen crecer</span> tu empresa
+            Liabell: Marketing y Sitios Web que <span className="text-primary">hacen crecer</span> tu empresa
           </h1>
 
           {/* Subtítulo de valor */}
