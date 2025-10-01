@@ -121,9 +121,9 @@ export default function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/#faq" passHref>
-                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                      <a>FAQ</a>
+                  <Link href="/#faq" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                      FAQ
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
