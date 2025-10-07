@@ -15,9 +15,10 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
       <Image
         src="/images/isologo.png"
         alt="Logo de Liabell"
-        width={48}
-        height={48}
+        width={64}
+        height={64}
         className="h-full w-full"
+        priority
       />
     </div>
   );
