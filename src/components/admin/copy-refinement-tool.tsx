@@ -83,7 +83,7 @@ export function CopyRefinementTool() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="originalCopy">Texto Original</Label>d
+              <Label htmlFor="originalCopy">Texto Original</Label>
               <Textarea
                 id="originalCopy"
                 placeholder="Ej: Creamos páginas web para negocios."
