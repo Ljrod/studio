@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ResetPasswordForm } from "@/components/forms/reset-password-form";
-import { AuthWrapper } from "@/componentsaut/auth-wrapper";
+import { AuthWrapper } from "@/components/auth/auth-wrapper";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
