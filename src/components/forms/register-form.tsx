@@ -45,7 +45,7 @@ export function RegisterForm() {
         title: "¡Cuenta creada!",
         description: "Te hemos enviado a tu dashboard.",
       });
-    } catch (error)t {
+    } catch (error) {
       // Manejo de errores específicos de Firebase.
       let title = "Error de registro";
       let description = "Ocurrió un error inesperado.";
@@ -53,6 +53,8 @@ export function RegisterForm() {
         if (error.code === "auth/email-already-in-use") {
           title = "Email en uso";
           description = "Este email ya está registrado. Por favor, inicia sesión.";
+        } else {
+            description = error.message;
         }
       }
       toast({ title, description, variant: "destructive" });
