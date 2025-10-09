@@ -1,14 +1,14 @@
 // /src/components/icons.tsx
 
 import Image from "next/image";
-import type { SVGProps } from "react";
+import type { HTMLAttributes } from "react";
 
 /**
  * Componente para el logo de Liabell.
  * Muestra el isologo desde la carpeta public.
- * @param props Propiedades estándar de SVG, aunque se usan para el div contenedor.
+ * @param props Propiedades estándar de un elemento HTML.
  */
-export function Logo(props: SVGProps<SVGSVGElement>) {
+export function Logo(props: HTMLAttributes<HTMLDivElement>) {
   const { className, ...rest } = props;
   return (
     <div className={className} {...rest}>
