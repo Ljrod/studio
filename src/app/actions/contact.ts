@@ -51,7 +51,7 @@ export async function submitContactForm(
     // Esto desacopla el envío de correo del formulario y permite reintentos.
     //
     // Ejemplo de cómo sería la lógica si se hiciera aquí (no recomendado para producción):
-    // await sendEmail({ to: 'info@laibell.com', subject: 'Nuevo Lead', ... });
+    // await sendEmail({ to: 'info@liabell.com', subject: 'Nuevo Lead', ... });
 
     // 3. Devolver una respuesta exitosa.
     return {
@@ -64,6 +64,5 @@ export async function submitContactForm(
       success: false,
       message: "Ocurrió un error en el servidor. Por favor, inténtalo más tarde.",
     };
-thats
   }
 }
